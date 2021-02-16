@@ -115,4 +115,4 @@ app.get('*', function (req, res) {
     res.json({ Error: "Parameter yang anda masukan salah" })
 })
 
-app.listen(process.env.PORT || 8000, () => 'Server work at localhost:8000')
+app.listen(process.env.PORT || 8000, () => console.log('Server work at localhost:8000'))
