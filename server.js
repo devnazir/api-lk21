@@ -2,6 +2,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const express = require('express');
 const app = express();
+const fs = require('fs')
 
 async function scraping(res, url) {
     try {
@@ -61,7 +62,10 @@ function getJSON(res, url, numPage) {
 }
 
 app.get('/', function (req, res) {
-    res.json({error: "Silahkan baca dokumentasi di https://github.com/devnazir/api-lk21/#readme"})
+    fs.readFile('./index.html', function(err, data) {
+        if(err) console.log(err)
+        res.end(data)
+    })
 })
 
 app.get('/newupload', function (req, res) {
