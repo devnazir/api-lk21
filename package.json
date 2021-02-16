@@ -1,0 +1,17 @@
+{
+  "name": "watchmov",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "nodemon api"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "express": "^4.17.1"
+  },
+  "keywords": [],
+  "description": ""
+}
