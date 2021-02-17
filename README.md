@@ -2,7 +2,7 @@
 
 <h3>Cara Pakai</h3>
 <div style="background-color='#f4f9f9'">
-  <pre>https://api-lk21.herokuapp.com/pathname</pre>
+  <pre>https://api-lk21.herokuapp.com/pathname?parameter=value</pre>
 </div>
 
 <h4>Data JSON yang akan didapatkan</h4>
