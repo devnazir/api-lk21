@@ -5,6 +5,8 @@ const getJSON = require('./scraper/scraper')
 
 app.use(cors({ origin: '*' }))
 
+app.set('json spaces', 2)
+
 app.get('/', function (req, res) {
     res.json({ error: "Silahkan baca dokumentasi di https://github.com/devnazir/api-lk21/#readme" })
 })
