@@ -42,7 +42,7 @@ async function getMovie(res, url, numPage) {
 
         })
 
-        res.json({ result, page: numPage ?? 1 })
+        res.json({ result, page: numPage})
     }
     catch (err) {
         console.log(err)
