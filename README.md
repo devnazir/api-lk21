@@ -89,7 +89,7 @@ https://api-lk21.herokuapp.com/api/v1/lists/year
 https://api-lk21.herokuapp.com/api/v1/lists/country
 ```
 
-#### Notes
+## Notes
 
 to next page you can add query ```?page=numPage``` for all endpoints
 Example
@@ -97,3 +97,6 @@ Example
 ```
 https://api-lk21.herokuapp.com/api/v1/latest?page=2
 ```
+
+## SUPPORTS
+https://www.paypal.com/paypalme/nazirbahrululum
