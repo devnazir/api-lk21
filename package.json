@@ -1,18 +1,27 @@
 {
   "name": "api-lk21",
   "version": "1.0.0",
+  "description": "API Untuk mengambil data-data movie LK21",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "server": "nodemon server.js"
   },
-  "author": "Nazir Bahrul Ulum",
+  "author": "devnazir",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.2",
-    "cheerio": "^1.0.0-rc.5",
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jsdom": "^19.0.0"
   },
-  "keywords": [],
-  "description": "API Untuk mengambil data-data movie LK21"
+  "keywords": [
+    "API LK21",
+    "API Movie Indonesia"
+  ],
+  "imports": {
+    "#routes/*": "./routes/*.js",
+    "#config/*": "./config/*.js",
+    "#utils/*": "./utils/*.js"
+  }
 }
