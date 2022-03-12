@@ -63,6 +63,12 @@ get movies with hd quality
 https://api-lk21.herokuapp.com/api/v1/hd-quality
 ```
 
+### /country/:countryName
+get movies by alphabet
+```
+https://api-lk21.herokuapp.com/api/v1/country/usa
+```
+
 ### /alphabet/:value
 get movies by alphabet
 ```
