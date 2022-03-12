@@ -11,6 +11,7 @@ import yearRoutes from "./year/index.js";
 import resolutionRoutes from "./resolution/index.js";
 import alphabetRoutes from "./alphabet/index.js";
 import searchRoutes from "./search/index.js";
+import countryRoutes from "./country/index.js";
 
 const router = Router();
 
@@ -26,5 +27,6 @@ router.use("/year", yearRoutes);
 router.use("/resolution", resolutionRoutes);
 router.use("/alphabet", alphabetRoutes);
 router.use("/search", searchRoutes);
+router.use("/country", countryRoutes);
 
 export default router;
