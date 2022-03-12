@@ -3,7 +3,7 @@ import getMovieData from "#utils/getMovieData";
 
 export const index = async (req, res) => {
   const numPage = req.query.page || 1;
-  const imdbRatingPage = await api(`/rating/${numPage}`);
+  const imdbRatingPage = await api(`/rating/page/${numPage}`);
   const htmlCode = imdbRatingPage.data;
 
   const { result, totalPages } = getMovieData({ htmlCode });

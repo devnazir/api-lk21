@@ -3,7 +3,7 @@ import getMovieData from "#utils/getMovieData";
 
 export const index = async (req, res) => {
   const numPage = req.query.page || 1;
-  const popularPage = await api(`/populer/${numPage}`);
+  const popularPage = await api(`/populer/page/${numPage}`);
   const htmlCode = popularPage.data;
 
   const { result, totalPages } = getMovieData({ htmlCode });

@@ -5,7 +5,7 @@ import listRoutes from "./lists/index.js";
 import hdQualityRoutes from "./hd-quality/index.js";
 import popularRoutes from "./popular/index.js";
 import trendingRoutes from "./trending/index.js";
-import imdbRatingRoutes from "./trending/index.js";
+import imdbRatingRoutes from "./imdb-rating/index.js";
 import releaseRoutes from "./release/index.js";
 import yearRoutes from "./year/index.js";
 import resolutionRoutes from "./resolution/index.js";

@@ -3,7 +3,7 @@ import getMovieData from "#utils/getMovieData";
 
 export const index = async (req, res) => {
   const numPage = req.query.page || 1;
-  const trendingPage = await api(`/trending-minggu-ini/${numPage}`);
+  const trendingPage = await api(`/trending-minggu-ini/page/${numPage}`);
   const htmlCode = trendingPage.data;
 
   const { result, totalPages } = getMovieData({ htmlCode });

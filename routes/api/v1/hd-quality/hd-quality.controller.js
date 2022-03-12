@@ -3,7 +3,7 @@ import getMovieData from "#utils/getMovieData";
 
 export const index = async (req, res) => {
   const numPage = req.query.page || 1;
-  const hdQualityPage = await api(`/hd-quality`);
+  const hdQualityPage = await api(`/hd-quality/page/${numPage}`);
   const htmlCode = hdQualityPage.data;
 
   const { result, totalPages } = getMovieData({ htmlCode });
