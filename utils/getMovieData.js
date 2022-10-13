@@ -1,5 +1,4 @@
 import jsdom from "jsdom";
-import { baseURL } from "#config/api";
 
 const { JSDOM } = jsdom;
 
@@ -25,9 +24,8 @@ const getMovieData = ({ htmlCode }) => {
     const options = JSON.parse(
       movie.querySelector("script[type='application/ld+json']").textContent
     );
-    const downloadLink = `https://t21.press/download${options.url
-      .split(baseURL)
-      .join("")}`;
+    const downloadLink = `https://t21.press/download/${options.url
+      .split('/')[3]}`;
 
     result.push({ poster, rating, quality, categories, downloadLink, options });
   });
